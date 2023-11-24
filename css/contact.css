@@ -1,0 +1,131 @@
+/*GRID*/
+lin .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40rem 1fr;
+  grid-gap: 1rem;
+}
+
+.grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: slategray;
+}
+
+/*HEADER*/
+
+h1 {
+  color: #0c2d48;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-bottom: 1rem;
+  font-family: "doublebass", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8rem;
+  padding-top: 2%;
+  margin-top: 0;
+}
+
+h2 {
+  text-align: center;
+  font-family: "tiffin-latin-variable", sans-serif;
+  font-variation-settings: "wght" 300;
+  font-size: 1.5rem;
+  color: #0c2d48;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-inline: 2rem;
+}
+
+a {
+  color: #0c2d48;
+  font-size: 0.9rem;
+}
+
+body {
+  background-color: #f7edd0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 2%;
+}
+
+form {
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.button {
+  background-color: darkolivegreen;
+  width: fit-content;
+  height: fit-content;
+  animation: shakyshaky;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shakyshaky {
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: rotate(15deg) scale(1.2);
+  }
+
+  60% {
+    transform: rotate(-15deg) scale(1.2);
+  }
+
+  70% {
+    transform: rotate(15deg) scale(1.2);
+  }
+  80% {
+    transform: rotate(-15deg) scale(1.2);
+  }
+
+  90% {
+    transform: rotate(15deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+footer {
+  margin-top: 3rem;
+  padding-top: 2%;
+  padding-bottom: 1rem;
+  background-color: #0c2d48;
+}
+
+footer p {
+  color: rgb(161, 183, 206);
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 2rem;
+}
+footer h2 {
+  text-align: left;
+  margin-left: 2rem;
+  color: rgb(161, 183, 206);
+}

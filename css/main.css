@@ -1,87 +1,109 @@
 /*GRID*/
+* {
+  margin: 0;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 40rem 1fr;
+  grid-template-rows: 1fr;
   grid-gap: 1rem;
 }
 
 .grid-item-1 {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: slategray;
 }
 
 .grid-item-2 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.grid-item-3 {
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 /*HEADER*/
 
 h1 {
-  color: rgb(208, 216, 192);
+  color: #0c2d48;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
   margin-bottom: 1rem;
+  margin-top: 0px;
   font-family: "doublebass", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 8rem;
+  font-size: 1.8rem;
+  padding-top: 2%;
 }
 
 h2 {
   text-align: center;
   font-family: "tiffin-latin-variable", sans-serif;
   font-variation-settings: "wght" 300;
-  font-size: 5rem;
-  color: rgb(208, 216, 192);
-  margin-bottom: 7rem;
+  font-size: 1.5rem;
+  color: #0c2d48;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 ul {
   list-style: none;
-  padding-left: 2%;
   display: flex;
-  margin-left: 45%;
-  margin-bottom: 5rem;
+  justify-content: center;
+  padding-bottom: 2%;
 }
 
 li {
-  margin-inline: 13rem;
+  margin-inline: 2rem;
 }
 
 a {
-  color: rgb(208, 216, 192);
-  font-size: 4rem;
+  color: #0c2d48;
+  font-size: 0.9rem;
 }
 
 /*MAIN*/
 img {
-  display: block;
-  margin-left: 15rem;
-  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
   width: 70%;
   margin-top: 2rem;
 }
 
 body {
-  background-color: #fefae0;
+  background-color: #f7edd0;
 }
 
 p {
-  font-size: 3.3rem;
+  font-size: 1rem;
   margin-left: 0%;
-  margin-right: 15rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+header {
+  background-color: slategray;
+  margin-top: 0;
+  padding-top: 0;
+}
+footer {
+  margin-top: 3rem;
+  padding-top: 2%;
+  padding-bottom: 1rem;
+  background-color: #0c2d48;
+}
+
+footer p {
+  color: rgb(161, 183, 206);
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 2rem;
+}
+footer h2 {
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 2rem;
+  color: rgb(161, 183, 206);
 }
