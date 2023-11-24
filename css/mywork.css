@@ -2,26 +2,27 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 3px;
+  padding: 3px;
 }
 /* 3 columns regular layout*/
 .column {
-  flex: 305%;
-  max-width: 32.5%;
-  padding: 0 3px;
+  flex: 30%;
+  max-width: 35%;
+  padding: 3px;
 }
 .column img {
-  margin-top: 8px;
+  margin-top: 3px;
   vertical-align: middle;
   width: 100%;
 }
 /*Layuout has two columns*/
 @media screen and (max-width: 800px) {
   .column {
-    flex: 40%;
+    flex: 45%;
     max-width: 45%;
   }
 }
+
 /* One column images stacked*/
 @media screen and (max-width: 500px) {
   .column {
