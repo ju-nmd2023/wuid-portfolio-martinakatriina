@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <title>My Socials</title>
     <link rel="stylesheet" href="https://use.typekit.net/aun1onj.css">
-    
+    <script src="js/index.js" defer></script>
    
 
 </head>
@@ -33,7 +33,7 @@
         </div>
       </header>
 <h2>Contact me</h2>
-<form id="myForm" onsubmit="return validate()">
+<form id="myForm" onsubmit="return validateForm()">
         <div>
             <label for="firstN" style="font-size: 1.2rem;">First Name</label>
         </div><div>
@@ -56,7 +56,9 @@
         <div class="button">
           <input type="submit" value="Submit" style = "font-size: 1.5rem"  /> 
         </div>
-        </form></div>
+        </form>
+      <div id="error-message"></div> 
+      </div>
 <footer>
    <h2>Socials</h2>
    <p>email: martinakatriina@gmail.com

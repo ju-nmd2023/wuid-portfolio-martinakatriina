@@ -19,7 +19,7 @@
 @media screen and (max-width: 800px) {
   .column {
     flex: 40%;
-    max-width: 50%;
+    max-width: 45%;
   }
 }
 /* One column images stacked*/
