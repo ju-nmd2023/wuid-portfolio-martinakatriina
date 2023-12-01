@@ -1,5 +1,5 @@
 /*GRID*/
-lin .grid-container {
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 40rem 1fr;
@@ -16,18 +16,55 @@ lin .grid-container {
 
 /*HEADER*/
 
+.top {
+  display: flex;
+  width: 95%;
+  border-radius: 2.5rem;
+  margin-left: 3%;
+  height: 2.8rem;
+  background-color: #fefae0;
+  margin-top: 1rem;
+  justify-content: center;
+}
+header {
+  align-items: center;
+  display: flex;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 h1 {
   color: #0c2d48;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-  margin-bottom: 1rem;
   font-family: "doublebass", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.8rem;
-  padding-top: 2%;
-  margin-top: 0;
+  font-size: 0.9rem;
+}
+.name {
+  margin: 0;
+  justify-content: left;
+}
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+li {
+  margin-inline: 1rem;
+  text-decoration: none;
+}
+
+a {
+  color: #0c2d48;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 h2 {
@@ -39,30 +76,14 @@ h2 {
   margin-bottom: 1rem;
 }
 
-li {
-  margin-inline: 2rem;
-}
-
-a {
-  color: #0c2d48;
-  font-size: 0.9rem;
-}
-
 body {
-  background-color: #f7edd0;
+  background-color: #ccd5ae;
   margin: 0;
 }
 
 h3 {
   font-size: 1.2rem;
   margin-left: 1.5rem;
-}
-
-ul {
-  list-style: none;
-  justify-content: center;
-  display: flex;
-  padding-bottom: 2%;
 }
 
 form {
