@@ -25,9 +25,11 @@
   background-color: #fefae0;
   margin-top: 1rem;
   justify-content: center;
+  align-items: center;
 }
 header {
   align-items: center;
+  justify-content: space-between;
   display: flex;
   margin-top: 0;
   padding-top: 0;
@@ -42,7 +44,6 @@ h1 {
 }
 .name {
   margin: 0;
-  justify-content: left;
 }
 ul {
   list-style: none;
@@ -74,11 +75,15 @@ h2 {
   font-size: 1.5rem;
   color: #0c2d48;
   margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 body {
   background-color: #ccd5ae;
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
@@ -95,17 +100,41 @@ p {
   font-size: 1.2rem;
   padding-left: 1.2rem;
 }
-
-.button {
-  background-color: darkolivegreen;
-  width: fit-content;
-  height: fit-content;
-  animation: shakyshaky;
+input {
+  margin-top: 0.5rem;
+  height: 1.5rem;
+  border-radius: 0.4rem;
+}
+.submitbutton {
+  text-align: left;
+  width: 6rem;
+  text-align: center;
+  height: 2rem;
+  background-color: #0c2d48;
+  color: white;
+  border-radius: 0.8rem;
+  border: #0c2d48;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-family: "tiffin-latin-variable", sans-serif;
+  font-variation-settings: "wght" 400;
+  animation-name: growButton;
   animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
+}
+.submitbutton:hover {
+  animation: growButton 1.5s ease-in-out forwards;
+}
+@keyframes growButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
 }
 
-@keyframes shakyshaky {
+/* @keyframes shakyshaky {
   25% {
     transform: scale(1.2);
   }
@@ -130,13 +159,12 @@ p {
   }
   100% {
     transform: scale(1);
-  }
-}
+  } */
+/* } */
 footer {
-  margin-top: 3rem;
-  padding-top: 2%;
   padding-bottom: 1rem;
   background-color: #0c2d48;
+  margin-top: 20rem;
 }
 
 footer p {
@@ -146,6 +174,7 @@ footer p {
   margin-left: 2rem;
 }
 footer h2 {
+  padding-top: 2%;
   text-align: left;
   margin-left: 2rem;
   color: rgb(161, 183, 206);

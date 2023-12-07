@@ -51,7 +51,7 @@ h1 {
 }
 .name {
   margin: 0;
-  justify-content: left;
+  margin-right: left;
 }
 ul {
   list-style: none;

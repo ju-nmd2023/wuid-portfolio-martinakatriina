@@ -1,6 +1,5 @@
-
 // define contant; button
-const buttonelement = document.getElementById("button");
+const buttonelement = document.getElementById("Sbutton");
 
 // Define the variables
 function validateForm() {
@@ -9,7 +8,7 @@ function validateForm() {
   var email = document.getElementById("Email");
   var subject = document.getElementById("Subject");
   var errorMessage = document.getElementById("error-message");
-// if theres no value entered
+  // if theres no value entered
   if (
     firstName.value.trim() === "" ||
     secondName.value.trim() === "" ||

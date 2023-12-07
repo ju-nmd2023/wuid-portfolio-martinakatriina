@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
     <title>My Socials</title>
-    <link rel="stylesheet" href="https://use.typekit.net/aun1onj.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aun1onj.css" />
     <script src="js/index.js" defer></script>
-   
-
-</head>
-<body>
-  <div class="top">
+  </head>
+  <body>
     <header>
-      <h1 class="name">Martina <br />Tommola</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="mywork.html">My work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-<main>
-<h2>Contact me</h2>
-<form id="myForm" onsubmit="return validateForm()">
-        <div>
-            <label for="firstN" style="font-size: 1.2rem;">First Name</label>
-        </div><div>
-            <input type="text" id="firstN" style="width: 10rem; height: 2rem;"> 
-        </div><div>
-            <label for="SecondN" style="font-size: 1.2rem;">Second Name</label>
-         </div><div>
-            <input type="text" id="SecondN" style="width: 10rem; height: 2rem;"> 
-         </div><div>
-            <label for="Email" style="font-size: 1.2rem;">Email</label>
-       </div><div>
-            <input type="text" id="Email" style="width: 20rem; height: 2rem;"> 
-        </div>
-        <div>
-            <label for="Subject" style="font-size: 1.2rem;">Subject</label>
-         </div><div>
-            <input type="text" id="Subject" style="width: 20rem; height: 20rem"> 
-     </div> 
-        <br>
-        <div class="button" id="button">
-          <input type="submit" value="Submit" style = "font-size: 1.5rem"  /> 
-        </div>
-        </form>
-      <div id="error-message"></div> 
+      <div class="top">
+        <a href="name"><h1 class="name">Martina Tommola</h1></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mywork.html">My work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-<footer>
-   <h2>Socials</h2>
-   <p>email: martinakatriina@gmail.com
-   <br>
-   Phone Number: +46 79-353 51 07
-   <br>
-   @martina.kjt
-   </p>
-</footer>
-</main>
-</body>
+    </header>
+    <main>
+      <h2>Contact me</h2>
+      <form id="myForm" onsubmit="return validateForm()">
+        <div>
+          <input type="text" id="firstN" placeholder="Subject" />
+        </div>
+        <div></div>
+        <div>
+          <input type="text" id="SecondN" placeholder="Second Name" />
+        </div>
+        <div>
+          <input type="text" id="Email" placeholder="Email" />
+        </div>
+        <div>
+          <input type="text" id="Subject" placeholder="Subject" />
+        </div>
+        <br />
+        <button id="Sbutton" class="submitbutton">Submit</button>
+      </form>
+      <div id="error-message"></div>
+
+      <footer>
+        <h2>Socials</h2>
+        <p>
+          email: martinakatriina@gmail.com
+          <br />
+          Phone Number: +46 79-353 51 07
+          <br />
+          @martina.kjt
+        </p>
+      </footer>
+    </main>
+  </body>
 </html>
